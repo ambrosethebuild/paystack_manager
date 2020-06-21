@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class PaymentAuthView extends StatefulWidget {

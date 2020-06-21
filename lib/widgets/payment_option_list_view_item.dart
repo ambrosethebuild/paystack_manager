@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/payment_option.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
+import 'package:paystack_manager/models/payment_option.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
 class PaymentOptionListViewItem extends StatelessWidget {
   const PaymentOptionListViewItem({
     Key key,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:flutter_paystack/models/payment_card.dart';
+import 'package:paystack_manager/models/payment_card.dart';
 
 class PaymentInfo {
   

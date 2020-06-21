@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/payment_option.dart';
-import 'package:flutter_paystack/widgets/payment_option_list_view_item.dart';
+import 'package:paystack_manager/models/payment_option.dart';
+import 'package:paystack_manager/widgets/payment_option_list_view_item.dart';
 
 class PaymentOptionsListview extends StatefulWidget {
   const PaymentOptionsListview({

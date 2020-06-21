@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/payment_card.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/utils/card_utils.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
-import 'package:flutter_paystack/widgets/accent_button.dart';
-import 'package:flutter_paystack/widgets/card_cvv_text_field.dart';
-import 'package:flutter_paystack/widgets/card_expiry_text_field.dart';
-import 'package:flutter_paystack/widgets/card_number_text_field.dart';
-import 'package:flutter_paystack/widgets/payment_option_header.dart';
-import 'package:flutter_paystack/widgets/secured_by.dart';
+import 'package:paystack_manager/models/payment_card.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/utils/card_utils.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
+import 'package:paystack_manager/widgets/accent_button.dart';
+import 'package:paystack_manager/widgets/card_cvv_text_field.dart';
+import 'package:paystack_manager/widgets/card_expiry_text_field.dart';
+import 'package:paystack_manager/widgets/card_number_text_field.dart';
+import 'package:paystack_manager/widgets/payment_option_header.dart';
+import 'package:paystack_manager/widgets/secured_by.dart';
 
 
 class CardPaymentView extends StatefulWidget {

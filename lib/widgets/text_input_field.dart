@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
 
 class InputTextField extends StatefulWidget {
   const InputTextField({

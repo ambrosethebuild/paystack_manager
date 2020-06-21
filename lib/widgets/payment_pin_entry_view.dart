@@ -2,10 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:pinput/pin_put/pin_put.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
-import 'package:flutter_paystack/widgets/payment_option_header.dart';
-import 'package:flutter_paystack/widgets/secured_by.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
+import 'package:paystack_manager/widgets/payment_option_header.dart';
+import 'package:paystack_manager/widgets/secured_by.dart';
 
 class PaymentPINEntryView extends StatefulWidget {
   PaymentPINEntryView({

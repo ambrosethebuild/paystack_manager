@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_paystack/utils/card_utils.dart';
-import 'package:flutter_paystack/widgets/text_input_field.dart';
+import 'package:paystack_manager/utils/card_utils.dart';
+import 'package:paystack_manager/widgets/text_input_field.dart';
 
 class CardCVVTextField extends StatefulWidget {
   

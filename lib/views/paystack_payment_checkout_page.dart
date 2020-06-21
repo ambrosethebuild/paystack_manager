@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/api/paystack_payment_api.dart';
-import 'package:flutter_paystack/data/payment_options.dart';
-import 'package:flutter_paystack/models/api_response.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/models/payment_option.dart';
-import 'package:flutter_paystack/models/transaction.dart';
-import 'package:flutter_paystack/models/transaction_status.dart';
-import 'package:flutter_paystack/utils/custom_dialog.dart';
-import 'package:flutter_paystack/widgets/bank_payment_view.dart';
-import 'package:flutter_paystack/widgets/card_payment_view.dart';
-import 'package:flutter_paystack/widgets/loading_Transaction_view.dart';
-import 'package:flutter_paystack/widgets/mobile_money_payment_view.dart';
-import 'package:flutter_paystack/widgets/payment_address_entry_view.dart';
-import 'package:flutter_paystack/widgets/payment_bank_auth_view.dart';
-import 'package:flutter_paystack/widgets/payment_birthday_entry_view.dart';
-import 'package:flutter_paystack/widgets/payment_failed_view.dart';
-import 'package:flutter_paystack/widgets/payment_option_list_view_item.dart';
-import 'package:flutter_paystack/widgets/payment_options_selector_view.dart';
-import 'package:flutter_paystack/widgets/payment_otp_entry_view.dart';
-import 'package:flutter_paystack/widgets/payment_phone_entry.dart';
-import 'package:flutter_paystack/widgets/payment_pin_entry_view.dart';
+import 'package:paystack_manager/api/paystack_payment_api.dart';
+import 'package:paystack_manager/data/payment_options.dart';
+import 'package:paystack_manager/models/api_response.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/models/payment_option.dart';
+import 'package:paystack_manager/models/transaction.dart';
+import 'package:paystack_manager/models/transaction_status.dart';
+import 'package:paystack_manager/utils/custom_dialog.dart';
+import 'package:paystack_manager/widgets/bank_payment_view.dart';
+import 'package:paystack_manager/widgets/card_payment_view.dart';
+import 'package:paystack_manager/widgets/loading_Transaction_view.dart';
+import 'package:paystack_manager/widgets/mobile_money_payment_view.dart';
+import 'package:paystack_manager/widgets/payment_address_entry_view.dart';
+import 'package:paystack_manager/widgets/payment_bank_auth_view.dart';
+import 'package:paystack_manager/widgets/payment_birthday_entry_view.dart';
+import 'package:paystack_manager/widgets/payment_failed_view.dart';
+import 'package:paystack_manager/widgets/payment_option_list_view_item.dart';
+import 'package:paystack_manager/widgets/payment_options_selector_view.dart';
+import 'package:paystack_manager/widgets/payment_otp_entry_view.dart';
+import 'package:paystack_manager/widgets/payment_phone_entry.dart';
+import 'package:paystack_manager/widgets/payment_pin_entry_view.dart';
 
 
 class PaystackPaymentCheckOutPage extends StatefulWidget {

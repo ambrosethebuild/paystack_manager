@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_paystack/models/payment_option.dart';
+import 'package:paystack_manager/models/payment_option.dart';
 
 class PaymentOptions {
   static List<PaymentOption> getList({@required String currency}) {

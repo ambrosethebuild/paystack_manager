@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_paystack/models/api_response.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
+import 'package:paystack_manager/models/api_response.dart';
+import 'package:paystack_manager/models/payment_info.dart';
 
 import 'apis.dart';
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/transaction.dart';
-import 'package:flutter_paystack/paystack_pay_manager.dart';
-import 'package:flutter_paystack/widgets/payment_address_entry_view.dart';
+import 'package:paystack_manager/models/transaction.dart';
+import 'package:paystack_manager/paystack_pay_manager.dart';
 
 void main() {
   runApp(MyApp());

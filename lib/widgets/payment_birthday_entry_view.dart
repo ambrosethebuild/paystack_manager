@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
-import 'package:flutter_paystack/utils/ui_strings.dart';
-import 'package:flutter_paystack/widgets/accent_button.dart';
-import 'package:flutter_paystack/widgets/payment_option_header.dart';
-import 'package:flutter_paystack/widgets/secured_by.dart';
-import 'package:flutter_paystack/widgets/text_input_field.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
+import 'package:paystack_manager/utils/ui_strings.dart';
+import 'package:paystack_manager/widgets/accent_button.dart';
+import 'package:paystack_manager/widgets/payment_option_header.dart';
+import 'package:paystack_manager/widgets/secured_by.dart';
+import 'package:paystack_manager/widgets/text_input_field.dart';
 
 class PaymentBirthDayEntryView extends StatefulWidget {
   PaymentBirthDayEntryView({
@@ -53,7 +53,7 @@ class _PaymentBirthDayEntryViewState extends State<PaymentBirthDayEntryView> {
           Image(
             image: AssetImage(
               "assets/images/dob.png",
-              package: "flutter_paystack",
+              package: "paystack_manager",
             ),
             width: 30,
             height: 40,

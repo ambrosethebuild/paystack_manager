@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
-import 'package:flutter_paystack/widgets/accent_button.dart';
-import 'package:flutter_paystack/widgets/payment_option_header.dart';
-import 'package:flutter_paystack/widgets/secured_by.dart';
-import 'package:flutter_paystack/widgets/text_input_field.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
+import 'package:paystack_manager/widgets/accent_button.dart';
+import 'package:paystack_manager/widgets/payment_option_header.dart';
+import 'package:paystack_manager/widgets/secured_by.dart';
+import 'package:paystack_manager/widgets/text_input_field.dart';
 
 class PaymentPhoneEntryView extends StatefulWidget {
   PaymentPhoneEntryView({

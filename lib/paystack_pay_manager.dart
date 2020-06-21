@@ -1,14 +1,14 @@
-library flutter_paystack;
+library paystack_manager;
 
 // Expose the following files
-export 'package:flutter_paystack/paystack_pay_manager.dart';
-export 'package:flutter_paystack/models/transaction.dart';
+export 'package:paystack_manager/paystack_pay_manager.dart';
+export 'package:paystack_manager/models/transaction.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/models/transaction_status.dart';
-import 'package:flutter_paystack/views/paystack_payment_checkout_page.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/models/transaction_status.dart';
+import 'package:paystack_manager/views/paystack_payment_checkout_page.dart';
 
 class PaystackPayManager {
   BuildContext _context;

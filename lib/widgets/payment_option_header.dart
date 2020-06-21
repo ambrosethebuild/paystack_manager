@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/payment_info.dart';
-import 'package:flutter_paystack/utils/ui_color.dart';
+import 'package:paystack_manager/models/payment_info.dart';
+import 'package:paystack_manager/utils/ui_color.dart';
 
 class PaymentOptionHeader extends StatefulWidget {
   const PaymentOptionHeader({
@@ -27,7 +27,7 @@ class _PaymentOptionHeaderState extends State<PaymentOptionHeader> {
               Image(
                 image: AssetImage(
                   "assets/images/paystack_icon.png",
-                  package: "flutter_paystack",
+                  package: "paystack_manager",
                 ),
               ),
         ),

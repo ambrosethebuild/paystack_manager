@@ -1,8 +1,8 @@
-name: flutter_paystack
+name: paystack_manager
 description: A Flutter plugin for making payments via Paystack Payment Gateway. Fully supports Android and iOS.
 version: 0.0.1
 author: Ambrose Bako<bakoambrose@gmail.com>
-homepage: https://github.com/ambrosethebuild/flutter_paystack.git
+homepage: https://github.com/ambrosethebuild/paystack_manager.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

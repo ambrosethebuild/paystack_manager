@@ -1,4 +1,4 @@
-import 'package:flutter_paystack/models/transaction_status.dart';
+import 'package:paystack_manager/models/transaction_status.dart';
 import 'api_response.dart';
 
 class Transaction {

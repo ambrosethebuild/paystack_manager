@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_paystack/models/card_type.dart';
-import 'package:flutter_paystack/utils/ui_strings.dart';
+import 'package:paystack_manager/models/card_type.dart';
+import 'package:paystack_manager/utils/ui_strings.dart';
 
 class CardUtils {
 
@@ -147,7 +147,7 @@ class CardUtils {
     if (img.isNotEmpty) {
       
       widget = Image(
-          image: AssetImage('assets/images/$img', package: "flutter_paystack"),
+          image: AssetImage('assets/images/$img', package: "paystack_manager"),
           width: 40.0,
         );
 
