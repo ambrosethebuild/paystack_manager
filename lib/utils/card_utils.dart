@@ -145,10 +145,12 @@ class CardUtils {
     }
     Widget widget;
     if (img.isNotEmpty) {
-      widget = new Image.asset(
-        'assets/images/$img',
-        width: 40.0,
-      );
+      
+      widget = Image(
+          image: AssetImage('assets/images/$img', package: "flutter_paystack"),
+          width: 40.0,
+        );
+
     } else {
       widget = icon;
     }

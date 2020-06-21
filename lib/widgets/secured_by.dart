@@ -31,9 +31,9 @@ class SecuredByFooter extends StatelessWidget {
         ),
         SizedBox(
           width: 5,
-        ),
-        Image.asset(
-          "assets/images/paystack.png",
+        ),        
+        Image(
+          image: AssetImage("assets/images/paystack.png", package: "flutter_paystack"),
           height: 30,
           width: 80,
         ),

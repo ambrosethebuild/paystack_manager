@@ -49,8 +49,11 @@ class _PaymentOTPEntryViewState extends State<PaymentOTPEntryView> {
           SizedBox(
             height: 40,
           ),
-          Image.asset(
-            "assets/images/otp.png",
+          Image(
+            image: AssetImage(
+              "assets/images/otp.png",
+              package: "flutter_paystack",
+            ),
             width: 30,
             height: 40,
           ),

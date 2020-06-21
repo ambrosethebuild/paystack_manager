@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 2020-06-21
 
-* TODO: Describe initial release.
+* A Flutter plugin for making payments via Paystack Payment Gateway. Fully supports Android and iOS.

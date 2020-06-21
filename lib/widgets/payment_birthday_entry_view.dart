@@ -25,7 +25,6 @@ class PaymentBirthDayEntryView extends StatefulWidget {
 }
 
 class _PaymentBirthDayEntryViewState extends State<PaymentBirthDayEntryView> {
-  
   //TextEditingController
   TextEditingController _dobTextEditingController = new TextEditingController();
 
@@ -51,8 +50,11 @@ class _PaymentBirthDayEntryViewState extends State<PaymentBirthDayEntryView> {
           SizedBox(
             height: 40,
           ),
-          Image.asset(
-            "assets/images/dob.png",
+          Image(
+            image: AssetImage(
+              "assets/images/dob.png",
+              package: "flutter_paystack",
+            ),
             width: 30,
             height: 40,
           ),
@@ -76,16 +78,13 @@ class _PaymentBirthDayEntryViewState extends State<PaymentBirthDayEntryView> {
             textEditingController: _dobTextEditingController,
             hintText: "YYYY-MM-DD",
             readyOnly: true,
-            validator: ( String value ){
-
-              if( value.isEmpty ){
+            validator: (String value) {
+              if (value.isEmpty) {
                 return UIStrings.fieldReq;
               }
               return null;
-
             },
             onTap: () async {
-
               //Date of birth picker
               final selectedDateTime = await showDatePicker(
                 context: context,
@@ -103,11 +102,10 @@ class _PaymentBirthDayEntryViewState extends State<PaymentBirthDayEntryView> {
               );
 
               //ON user select date time
-              if( selectedDateTime != null ){
-                _dobTextEditingController.text = "${selectedDateTime.year}-${selectedDateTime.month}-${selectedDateTime.day}";
+              if (selectedDateTime != null) {
+                _dobTextEditingController.text =
+                    "${selectedDateTime.year}-${selectedDateTime.month}-${selectedDateTime.day}";
               }
-
-
             },
           ),
           SizedBox(

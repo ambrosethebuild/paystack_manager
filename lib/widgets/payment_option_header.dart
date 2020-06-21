@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_paystack/models/payment_info.dart';
 import 'package:flutter_paystack/utils/ui_color.dart';
 
-
 class PaymentOptionHeader extends StatefulWidget {
   const PaymentOptionHeader({
     Key key,
@@ -21,10 +20,16 @@ class _PaymentOptionHeaderState extends State<PaymentOptionHeader> {
     return Row(
       children: <Widget>[
         //Company/app logo
-        Image.asset(
-          widget.paymentInfo.companyAssetImage ?? "assets/images/paystack_icon.png",
+        Container(
           width: 30,
           height: 30,
+          child: widget.paymentInfo.companyAssetImage ??
+              Image(
+                image: AssetImage(
+                  "assets/images/paystack_icon.png",
+                  package: "flutter_paystack",
+                ),
+              ),
         ),
 
         Expanded(

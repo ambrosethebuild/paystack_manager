@@ -1,10 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_paystack/models/payment_card.dart';
 
 class PaymentInfo {
   
   String secretKey;
-  String companyAssetImage;
+  Widget companyAssetImage;
   int amount;
   String country;
   String currency;
