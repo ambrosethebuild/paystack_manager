@@ -22,7 +22,6 @@ class _PaymentAuthViewState extends State<PaymentAuthView> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-
         //toogle the linear loading progress indicator
         _showLoading
             ? LinearProgressIndicator(

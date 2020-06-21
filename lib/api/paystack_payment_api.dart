@@ -504,7 +504,6 @@ class PaystackPaymentApi {
     return apiResponse;
   }
 
-
   static Future<APIResponse> bankPayment({
     String code,
     String accountNumber,

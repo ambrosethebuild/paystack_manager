@@ -12,14 +12,11 @@ class Transaction {
     this.state,
   });
 
-  factory Transaction.fromObject( APIResponse apiResponse ){
-    
+  factory Transaction.fromObject(APIResponse apiResponse) {
     final transaction = Transaction();
     transaction.message = apiResponse.dataMessage ?? "";
     transaction.refrenceNumber = apiResponse.reference;
     transaction.state = apiResponse.nextAction;
     return transaction;
-
   }
-
 }

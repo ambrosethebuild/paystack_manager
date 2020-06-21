@@ -25,7 +25,8 @@ class PaymentPhoneEntryView extends StatefulWidget {
 
 class _PaymentPhoneEntryViewState extends State<PaymentPhoneEntryView> {
   //TextEditingController
-  TextEditingController _phoneNumberTextEditingController = new TextEditingController();
+  TextEditingController _phoneNumberTextEditingController =
+      new TextEditingController();
 
   // Note: This is a GlobalKey<FormState>,
   // not a GlobalKey<MyCustomFormState>.
@@ -61,7 +62,7 @@ class _PaymentPhoneEntryViewState extends State<PaymentPhoneEntryView> {
             child: Text(
               widget.message,
               style: TextStyle(
-                color:UIColors.primaryColor,
+                color: UIColors.primaryColor,
                 fontSize: 14,
               ),
             ),
@@ -74,7 +75,7 @@ class _PaymentPhoneEntryViewState extends State<PaymentPhoneEntryView> {
             textEditingController: _phoneNumberTextEditingController,
             keyboardType: TextInputType.phone,
             validator: (String value) {
-              if (value.isEmpty || value.length < 10 || value.length > 13 ) {
+              if (value.isEmpty || value.length < 10 || value.length > 13) {
                 return "Invalid Phone Number";
               }
 
@@ -91,7 +92,7 @@ class _PaymentPhoneEntryViewState extends State<PaymentPhoneEntryView> {
               if (_formKey.currentState.validate()) {
                 // If the form is valid, display a Snackbar.
                 print("Valid");
-                widget.onSubmit( _phoneNumberTextEditingController.text );
+                widget.onSubmit(_phoneNumberTextEditingController.text);
               } else {
                 print("Invalid");
               }

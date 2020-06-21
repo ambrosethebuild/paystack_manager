@@ -11,8 +11,7 @@ class PaymentCard {
     this.year,
   });
 
-
-  dynamic toJOSNObject(){
+  dynamic toJOSNObject() {
     return {
       "number": this.number,
       "cvv": this.cvv,
@@ -20,5 +19,4 @@ class PaymentCard {
       "expiry_year": this.year,
     };
   }
-
 }

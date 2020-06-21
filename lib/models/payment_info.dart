@@ -3,7 +3,6 @@ import 'package:intl/intl.dart';
 import 'package:paystack_manager/models/payment_card.dart';
 
 class PaymentInfo {
-  
   String secretKey;
   Widget companyAssetImage;
   int amount;
@@ -15,12 +14,10 @@ class PaymentInfo {
   dynamic metadata;
   PaymentCard paymentCard;
 
-  String get formatedAmount {    
-    
+  String get formatedAmount {
     double hundredth = this.amount / 100;
     String hundredthInDecimal = NumberFormat("#,###.00").format(hundredth);
     return hundredthInDecimal;
-
   }
 
   PaymentInfo({
@@ -35,5 +32,4 @@ class PaymentInfo {
     this.metadata,
     this.paymentCard,
   });
-
 }

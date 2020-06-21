@@ -10,7 +10,6 @@ import 'package:paystack_manager/widgets/payment_option_header.dart';
 import 'package:paystack_manager/widgets/secured_by.dart';
 import 'package:paystack_manager/widgets/text_input_field.dart';
 
-
 class BankPaymentView extends StatefulWidget {
   BankPaymentView({
     Key key,

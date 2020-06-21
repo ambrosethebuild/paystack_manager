@@ -16,7 +16,6 @@ class CardNumberTextField extends StatefulWidget {
 
   @override
   _CardNumberTextFieldState createState() => _CardNumberTextFieldState();
-
 }
 
 class _CardNumberTextFieldState extends State<CardNumberTextField> {

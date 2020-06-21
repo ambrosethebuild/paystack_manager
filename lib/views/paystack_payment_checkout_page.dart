@@ -21,7 +21,6 @@ import 'package:paystack_manager/widgets/payment_otp_entry_view.dart';
 import 'package:paystack_manager/widgets/payment_phone_entry.dart';
 import 'package:paystack_manager/widgets/payment_pin_entry_view.dart';
 
-
 class PaystackPaymentCheckOutPage extends StatefulWidget {
   PaystackPaymentCheckOutPage({
     Key key,
@@ -618,7 +617,6 @@ class _PaystackPaymentCheckOutPageState
     }
   }
 
-
   //
   void _closePaystackPayment() {
     //check if the use is at AUTH_URL
@@ -695,7 +693,8 @@ class _PaystackPaymentCheckOutPageState
         context,
         transaction,
       );
-    } else if (transactionState == TransactionState.FAILED && apiResponse != null ) {
+    } else if (transactionState == TransactionState.FAILED &&
+        apiResponse != null) {
       Transaction transaction = Transaction.fromObject(apiResponse);
       Navigator.pop(
         context,
@@ -703,6 +702,4 @@ class _PaystackPaymentCheckOutPageState
       );
     }
   }
-
-
 }

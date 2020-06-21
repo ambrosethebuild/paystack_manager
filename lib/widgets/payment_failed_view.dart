@@ -5,7 +5,6 @@ import 'package:paystack_manager/utils/ui_color.dart';
 import 'package:paystack_manager/widgets/payment_option_header.dart';
 import 'package:paystack_manager/widgets/secured_by.dart';
 
-
 class PaymentFailedView extends StatefulWidget {
   PaymentFailedView({
     Key key,
@@ -29,12 +28,12 @@ class _PaymentFailedViewState extends State<PaymentFailedView> {
       padding: EdgeInsets.all(20),
       children: <Widget>[
         //Header View
-          PaymentOptionHeader(
-            paymentInfo: widget.paymentInfo,
-          ),
-          Divider(
-            height: 30,
-          ),
+        PaymentOptionHeader(
+          paymentInfo: widget.paymentInfo,
+        ),
+        Divider(
+          height: 30,
+        ),
         Icon(
           //Icons.close,
           FlutterIcons.error_mdi,

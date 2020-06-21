@@ -14,7 +14,7 @@ class InputTextField extends StatefulWidget {
     this.keyboardType,
     this.inputFormatters,
     this.textEditingController,
-    this.readyOnly = false, 
+    this.readyOnly = false,
     this.onTap,
   }) : super(key: key);
 
@@ -30,10 +30,8 @@ class InputTextField extends StatefulWidget {
   final TextEditingController textEditingController;
   final bool readyOnly;
 
-
   @override
   _InputTextFieldState createState() => _InputTextFieldState();
-
 }
 
 class _InputTextFieldState extends State<InputTextField> {

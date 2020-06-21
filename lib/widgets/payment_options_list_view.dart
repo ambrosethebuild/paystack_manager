@@ -24,13 +24,12 @@ class _PaymentOptionsListviewState extends State<PaymentOptionsListview> {
       physics: NeverScrollableScrollPhysics(),
       itemCount: widget.paymentOptionslist.length,
       itemBuilder: (context, index) {
-
         final mPaymentOption = widget.paymentOptionslist[index];
 
         return PaymentOptionListViewItem(
           paymentOption: mPaymentOption,
           onPressed: () {
-            widget.onItemPressed( mPaymentOption );
+            widget.onItemPressed(mPaymentOption);
           },
         );
       },

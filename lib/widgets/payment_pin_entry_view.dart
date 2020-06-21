@@ -54,12 +54,12 @@ class _PaymentPINEntryViewState extends State<PaymentPINEntryView> {
       padding: EdgeInsets.all(20),
       children: <Widget>[
         //Header View
-          PaymentOptionHeader(
-            paymentInfo: widget.paymentInfo,
-          ),
-          Divider(
-            height: 30,
-          ),
+        PaymentOptionHeader(
+          paymentInfo: widget.paymentInfo,
+        ),
+        Divider(
+          height: 30,
+        ),
         SizedBox(
           height: 40,
         ),

@@ -21,8 +21,7 @@ class APIResponse {
     this.authUrl,
   });
 
-  factory APIResponse.fromObject( dynamic object ){
-    
+  factory APIResponse.fromObject(dynamic object) {
     final apiResponse = APIResponse();
     apiResponse.status = object["status"];
     apiResponse.statusMessage = object["message"];
@@ -34,7 +33,7 @@ class APIResponse {
 
     TransactionState mNextAction = TransactionState.PENDING;
 
-    switch ( apiResponse.data["status"] ) {
+    switch (apiResponse.data["status"]) {
       case "pending":
         mNextAction = TransactionState.PENDING;
         break;
@@ -70,14 +69,8 @@ class APIResponse {
         break;
     }
 
-
     apiResponse.nextAction = mNextAction;
 
     return apiResponse;
-    
   }
-
-
 }
-
-

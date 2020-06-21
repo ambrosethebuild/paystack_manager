@@ -10,7 +10,6 @@ import 'package:paystack_manager/widgets/card_number_text_field.dart';
 import 'package:paystack_manager/widgets/payment_option_header.dart';
 import 'package:paystack_manager/widgets/secured_by.dart';
 
-
 class CardPaymentView extends StatefulWidget {
   CardPaymentView({
     Key key,
@@ -137,8 +136,7 @@ class _CardPaymentViewState extends State<CardPaymentView> {
                       widget.paymentInfo.paymentCard = mPaymentCard;
 
                       //send the payment info to the parent view to start processing the transaction
-                      widget.onSubmit( widget.paymentInfo );
-
+                      widget.onSubmit(widget.paymentInfo);
                     } else {
                       print("Invalid");
                     }

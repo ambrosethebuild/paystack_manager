@@ -56,7 +56,6 @@ class _PaymentAddressEntryViewState extends State<PaymentAddressEntryView> {
             height: 30,
           ),
 
-          
           SizedBox(
             height: 40,
           ),

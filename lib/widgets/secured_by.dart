@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:paystack_manager/utils/ui_color.dart';
 
-
 class SecuredByFooter extends StatelessWidget {
   const SecuredByFooter({
     Key key,
@@ -31,9 +30,10 @@ class SecuredByFooter extends StatelessWidget {
         ),
         SizedBox(
           width: 5,
-        ),        
+        ),
         Image(
-          image: AssetImage("assets/images/paystack.png", package: "paystack_manager"),
+          image: AssetImage("assets/images/paystack.png",
+              package: "paystack_manager"),
           height: 30,
           width: 80,
         ),

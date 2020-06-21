@@ -23,7 +23,6 @@ class PaystackPayManager {
   String _lastName;
   dynamic _metadata;
 
-
   //Response handler
   Function _onSuccessful;
   Function _onFailed;
@@ -47,7 +46,6 @@ class PaystackPayManager {
   setCompanyAssetImage(Widget companyAssetImage) {
     _companyAssetImage = companyAssetImage;
   }
-
 
   /*
    * Amount should be in kobo if currency is NGN and pesewas for GHS
@@ -140,33 +138,25 @@ class PaystackPayManager {
         ),
       ),
     );
-    
-    if( transactionResult.state == TransactionState.SUCCESS ){
+
+    if (transactionResult.state == TransactionState.SUCCESS) {
       _onSuccessful(transactionResult);
-    }else if( transactionResult.state == TransactionState.FAILED ){
+    } else if (transactionResult.state == TransactionState.FAILED) {
       _onFailed(transactionResult);
-    }else{
+    } else {
       _onCancelled(transactionResult);
     }
-
-
-
   }
 
-  onSuccesful( Function onSuccesful ) {
+  onSuccesful(Function onSuccesful) {
     _onSuccessful = onSuccesful;
   }
 
-  onFailed( Function onFailed ) {
+  onFailed(Function onFailed) {
     _onFailed = onFailed;
   }
 
-  onCancel( Function onCancel ) {
+  onCancel(Function onCancel) {
     _onCancelled = onCancel;
   }
-
-  
-
-
-  
 }

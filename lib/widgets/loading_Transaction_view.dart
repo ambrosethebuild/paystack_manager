@@ -6,8 +6,6 @@ import 'package:paystack_manager/utils/ui_color.dart';
 import 'package:paystack_manager/widgets/payment_option_header.dart';
 import 'package:paystack_manager/widgets/secured_by.dart';
 
-
-
 class LoadingTransactionView extends StatefulWidget {
   LoadingTransactionView({
     Key key,
@@ -35,7 +33,7 @@ class _LoadingTransactionViewState extends State<LoadingTransactionView> {
         Divider(
           height: 30,
         ),
-        
+
         SizedBox(
           height: 50,
         ),

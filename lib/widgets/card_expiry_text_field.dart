@@ -5,13 +5,12 @@ import 'package:paystack_manager/utils/input_formatters.dart';
 import 'package:paystack_manager/widgets/text_input_field.dart';
 
 class CardExpiryTextField extends StatefulWidget {
- 
   CardExpiryTextField({
     Key key,
     this.onSaved,
     this.textEditingController,
   }) : super(key: key);
-  
+
   final Function onSaved;
   final TextEditingController textEditingController;
 

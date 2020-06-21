@@ -3,7 +3,6 @@ import 'package:paystack_manager/models/card_type.dart';
 import 'package:paystack_manager/utils/ui_strings.dart';
 
 class CardUtils {
-
   static String validateCVV(String value) {
     if (value.isEmpty) {
       return UIStrings.fieldReq;
@@ -30,8 +29,8 @@ class CardUtils {
       // it is the year.
       month = int.parse(split[0]);
       year = int.parse(split[1]);
-
-    } else { // Only the month was entered
+    } else {
+      // Only the month was entered
       month = int.parse(value.substring(0, (value.length)));
       year = -1; // Lets use an invalid year intentionally
     }
@@ -86,8 +85,8 @@ class CardUtils {
     // has passed
     // 2. Card's month (plus another month) is more than current month.
     //return hasYearPassed(year) || convertYearTo4Digits(year) == now.year && (month < now.month + 1);
-    return hasYearPassed(year) || convertYearTo4Digits(year) == now.year && (month < now.month);
-
+    return hasYearPassed(year) ||
+        convertYearTo4Digits(year) == now.year && (month < now.month);
   }
 
   static bool hasYearPassed(int year) {
@@ -145,18 +144,15 @@ class CardUtils {
     }
     Widget widget;
     if (img.isNotEmpty) {
-      
       widget = Image(
-          image: AssetImage('assets/images/$img', package: "paystack_manager"),
-          width: 40.0,
-        );
-
+        image: AssetImage('assets/images/$img', package: "paystack_manager"),
+        width: 40.0,
+      );
     } else {
       widget = icon;
     }
     return widget;
   }
-
 
   /// With the card number with Luhn Algorithm
   /// https://en.wikipedia.org/wiki/Luhn_algorithm
@@ -217,5 +213,4 @@ class CardUtils {
     }
     return cardType;
   }
-
 }

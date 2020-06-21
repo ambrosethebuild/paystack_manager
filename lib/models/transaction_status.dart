@@ -1,5 +1,4 @@
 enum TransactionState {
-  
   Idle,
   Loading,
   SEND_PIN,
@@ -13,5 +12,4 @@ enum TransactionState {
   PENDING,
   FAILED,
   CANCELLED,
-
 }

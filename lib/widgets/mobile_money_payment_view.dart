@@ -55,7 +55,7 @@ class _MobileMoneyPaymentViewState extends State<MobileMoneyPaymentView> {
           Divider(
             height: 30,
           ),
-          
+
           SizedBox(
             height: 40,
           ),
@@ -87,10 +87,9 @@ class _MobileMoneyPaymentViewState extends State<MobileMoneyPaymentView> {
             decoration: ShapeDecoration(
               shape: RoundedRectangleBorder(
                 side: BorderSide(
-                  width: 1.0,
-                  style: BorderStyle.solid,
-                  color: Colors.grey[500]
-                ),
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                    color: Colors.grey[500]),
                 borderRadius: BorderRadius.all(
                   Radius.circular(5.0),
                 ),
@@ -99,7 +98,6 @@ class _MobileMoneyPaymentViewState extends State<MobileMoneyPaymentView> {
             child: DropdownButton(
               isExpanded: true,
               underline: SizedBox.shrink(),
-              
               elevation: 16,
               hint: Text("Select Provider"),
               items: mobileMoneyOptionslist
@@ -144,10 +142,8 @@ class _MobileMoneyPaymentViewState extends State<MobileMoneyPaymentView> {
               if (_formKey.currentState.validate()) {
                 // If the form is valid, display a Snackbar.
                 print("Valid");
-                widget.onSubmit(
-                  _selectedMobileMoneyOption.slug,
-                  _phoneNumberTextEditingController.text
-                );
+                widget.onSubmit(_selectedMobileMoneyOption.slug,
+                    _phoneNumberTextEditingController.text);
               } else {
                 print("Invalid");
               }
