@@ -1,0 +1,17 @@
+enum TransactionState {
+  
+  Idle,
+  Loading,
+  SEND_PIN,
+  SEND_OTP,
+  SEND_PHONE,
+  SEND_BIRTHDATE,
+  SEND_AUTH_URL,
+  SEND_ADDRESS,
+  PAY_OFFLINE,
+  SUCCESS,
+  PENDING,
+  FAILED,
+  CANCELLED,
+
+}

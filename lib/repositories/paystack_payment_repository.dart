@@ -1,0 +1,4 @@
+class PaystackPaymentRepository extends Object
+ {
+  
+}
