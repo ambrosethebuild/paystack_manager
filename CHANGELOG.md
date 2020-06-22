@@ -6,6 +6,6 @@
 
 * Re-formatted code.
 
-## [1.0.1] - 2020-06-22
+## [1.0.2] - 2020-06-22
 
 * Added transaction reference
