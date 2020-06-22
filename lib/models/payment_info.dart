@@ -4,6 +4,7 @@ import 'package:paystack_manager/models/payment_card.dart';
 
 class PaymentInfo {
   String secretKey;
+  String reference;
   Widget companyAssetImage;
   int amount;
   String country;
@@ -22,6 +23,7 @@ class PaymentInfo {
 
   PaymentInfo({
     this.secretKey,
+    this.reference,
     this.companyAssetImage,
     this.amount,
     this.country,

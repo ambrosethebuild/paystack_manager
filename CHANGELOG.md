@@ -5,3 +5,7 @@
 ## [1.0.1] - 2020-06-21
 
 * Re-formatted code.
+
+## [1.0.1] - 2020-06-22
+
+* Added transaction reference

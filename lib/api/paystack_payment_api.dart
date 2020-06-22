@@ -22,6 +22,7 @@ class PaystackPaymentApi {
       "email": paymentInfo.email,
       "amount": paymentInfo.amount,
       "currency": paymentInfo.currency,
+      "reference": paymentInfo.reference,
       "metadata": paymentInfo.metadata,
       "card": {
         "number": paymentInfo.paymentCard.number,
@@ -450,6 +451,7 @@ class PaystackPaymentApi {
       "amount": paymentInfo.amount,
       "currency": paymentInfo.currency,
       "metadata": paymentInfo.metadata,
+      "reference": paymentInfo.reference,
       "mobile_money": {
         "phone": phone,
         "provider": provider,
@@ -517,6 +519,7 @@ class PaystackPaymentApi {
       "amount": paymentInfo.amount,
       "currency": paymentInfo.currency,
       "metadata": paymentInfo.metadata,
+      "reference": paymentInfo.reference,
       "bank": {
         "code": code,
         "account_number": accountNumber,

@@ -13,6 +13,7 @@ import 'package:paystack_manager/views/paystack_payment_checkout_page.dart';
 class PaystackPayManager {
   BuildContext _context;
   String _secretKey;
+  String _reference;
   Widget _companyAssetImage;
   // String _publicKey;
   int _amount;
@@ -38,6 +39,13 @@ class PaystackPayManager {
 
   setSecretKey(String secretKey) {
     _secretKey = secretKey;
+  }
+
+  /*
+   * Transaction reference
+   */
+  setReference(String reference) {
+    _reference = reference;
   }
 
   /*
@@ -114,12 +122,14 @@ class PaystackPayManager {
   initialize() async {
     // assert( _publicKey != null && _publicKey.isNotEmpty );
     assert(_secretKey != null && _secretKey.isNotEmpty);
+    assert(_reference != null && _reference.isNotEmpty);
     assert(_email != null && _email.isNotEmpty);
     assert(_amount != null && _amount > 0);
     assert(_currency != null && _currency.isNotEmpty);
 
     final mPaymentInfo = PaymentInfo(
       secretKey: _secretKey,
+      reference: _reference,
       amount: _amount,
       country: _country,
       currency: _currency,
