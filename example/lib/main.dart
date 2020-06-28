@@ -79,6 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         )
         ..setAmount(152)
+		..setReference("your-transaction-reference")
         ..setCurrency("GHS")
         ..setEmail("bakoambrose@gmail.com")
         ..setFirstName("Ambrose")
