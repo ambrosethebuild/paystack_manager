@@ -67,8 +67,11 @@ class PaystackPaymentApi {
       try {
         //alert the user with the message from the server
         // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -112,8 +115,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -126,9 +132,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -172,8 +180,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -186,9 +197,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -232,8 +245,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -246,9 +262,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -285,8 +303,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -299,9 +320,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -345,8 +368,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -359,9 +385,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -411,8 +439,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -425,9 +456,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -478,9 +511,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          //errorMessage = response.data["message"];
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -493,9 +528,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }
@@ -546,9 +583,11 @@ class PaystackPaymentApi {
 
         try {
           //alert the user with the message from the server
-          //errorMessage = response.data["message"];
-          errorMessage =
-              response.data["data"]["message"] ?? response.data["message"];
+          if (response.data["data"] != null) {
+            errorMessage = response.data["data"]["message"];
+          } else {
+            errorMessage = response.data["message"];
+          }
         } catch (error) {
           print("Error Data Getting Failed:: $error");
         }
@@ -561,9 +600,11 @@ class PaystackPaymentApi {
 
       try {
         //alert the user with the message from the server
-        // final jsonObject = convert.jsonDecode(error.message);
-        errorMessage = dioError.response.data["data"]["message"] ??
-            dioError.response.data["message"];
+        if (dioError.response.data["data"] != null) {
+          errorMessage = dioError.response.data["data"]["message"];
+        } else {
+          errorMessage = dioError.response.data["message"];
+        }
       } catch (error) {
         print("Error Data Getting Failed:: $error");
       }

@@ -66,20 +66,17 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-
   void _processPayment() {
     try {
-
       PaystackPayManager(context: context)
         ..setSecretKey("sk_test_7e3a3dbff5d7b8b2ee7e61125b503ecbba8c850f")
         //accepts widget
-        ..setCompanyAssetImage(
-          Image(
-            image: AssetImage("assets/images/logo.png"),
-          )
-        )
+        ..setCompanyAssetImage(Image(
+          image: AssetImage("assets/images/logo.png"),
+        ))
         ..setAmount(152)
-		    ..setReference("your-transaction-reference")
+        // ..setReference("your-unique-transaction-reference")
+        ..setReference(DateTime.now().millisecondsSinceEpoch.toString())
         ..setCurrency("GHS")
         ..setEmail("bakoambrose@gmail.com")
         ..setFirstName("Ambrose")
@@ -99,27 +96,22 @@ class _MyHomePageState extends State<MyHomePage> {
         ..onFailed(_onPaymentFailed)
         ..onCancel(_onPaymentCancelled)
         ..initialize();
-
     } catch (error) {
       print("Payment Error ==> $error");
     }
-
   }
 
-
-  void _onPaymentSuccessful(Transaction transaction){
+  void _onPaymentSuccessful(Transaction transaction) {
     print("Transaction was successful");
     print("Transaction Message ===> ${transaction.message}");
     print("Transaction Refrence ===> ${transaction.refrenceNumber}");
   }
 
-  void _onPaymentFailed(Transaction transaction){
+  void _onPaymentFailed(Transaction transaction) {
     print("Transaction failed");
   }
 
-  void _onPaymentCancelled(Transaction transaction){
+  void _onPaymentCancelled(Transaction transaction) {
     print("Transaction was cancelled");
   }
-
-
 }
