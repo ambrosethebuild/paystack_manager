@@ -4,6 +4,14 @@ version: 1.0.4
 author: Ambrose Bako<bakoambrose@gmail.com>
 homepage: https://github.com/ambrosethebuild/paystack_manager.git
 
+plugin:
+    platforms:
+      android:
+        package: com.example.paystack_manager
+        pluginClass: PaystackPayManager
+      ios:
+        pluginClass: PaystackPayManager
+
 environment:
   sdk: ">=2.7.0 <3.0.0"
 
