@@ -26,7 +26,7 @@ class _CardCVVTextFieldState extends State<CardCVVTextField> {
       validator: CardUtils.validateCVV,
       keyboardType: TextInputType.number,
       inputFormatters: [
-        WhitelistingTextInputFormatter.digitsOnly,
+        FilteringTextInputFormatter.digitsOnly,
         new LengthLimitingTextInputFormatter(4),
       ],
       onSaved: widget.onSaved,

@@ -69,12 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void _processPayment() {
     try {
       PaystackPayManager(context: context)
-        ..setSecretKey("sk_test_7e3a3dbff5d7b8b2ee7e61125b503ecbba8c850f")
+        // Don't store your secret key on users device.
+        // Make sure this is retrive from your server at run time
+        ..setSecretKey("sk_test_eae9d6ee00def0e9932f97281c4374ef72d57674")
         //accepts widget
         ..setCompanyAssetImage(Image(
           image: AssetImage("assets/images/logo.png"),
         ))
-        ..setAmount(152)
+        ..setAmount(050)
         // ..setReference("your-unique-transaction-reference")
         ..setReference(DateTime.now().millisecondsSinceEpoch.toString())
         ..setCurrency("GHS")
@@ -93,6 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
           },
         )
         ..onSuccesful(_onPaymentSuccessful)
+        ..onPending(_onPaymentPending)
         ..onFailed(_onPaymentFailed)
         ..onCancel(_onPaymentCancelled)
         ..initialize();
@@ -107,8 +110,14 @@ class _MyHomePageState extends State<MyHomePage> {
     print("Transaction Refrence ===> ${transaction.refrenceNumber}");
   }
 
+  void _onPaymentPending(Transaction transaction) {
+    print("Transaction is pendinng");
+    print("Transaction Refrence ===> ${transaction.refrenceNumber}");
+  }
+
   void _onPaymentFailed(Transaction transaction) {
     print("Transaction failed");
+    print("Transaction Message ===> ${transaction.message}");
   }
 
   void _onPaymentCancelled(Transaction transaction) {

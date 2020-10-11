@@ -550,7 +550,7 @@ class _PaystackPaymentCheckOutPageState
         //check of the transaction requires futher action
         _updatedViewState(
           response.nextAction,
-          response.dataMessage,
+          response.displayText ?? response.dataMessage,
           apiResponse: response,
         );
       }
@@ -661,7 +661,7 @@ class _PaystackPaymentCheckOutPageState
       //check of the transaction requires futher action
       _updatedViewState(
         response.nextAction,
-        response.dataMessage,
+        response.gatewayResponse,
         apiResponse: response,
       );
     } catch (error) {
@@ -688,6 +688,12 @@ class _PaystackPaymentCheckOutPageState
     });
 
     if (transactionState == TransactionState.SUCCESS) {
+      Transaction transaction = Transaction.fromObject(apiResponse);
+      Navigator.pop(
+        context,
+        transaction,
+      );
+    } else if (transactionState == TransactionState.PENDING) {
       Transaction transaction = Transaction.fromObject(apiResponse);
       Navigator.pop(
         context,

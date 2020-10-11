@@ -8,6 +8,7 @@ class APIResponse {
   String dataMessage;
   TransactionState nextAction;
   String displayText;
+  String gatewayResponse;
   String authUrl;
 
   APIResponse({
@@ -16,6 +17,7 @@ class APIResponse {
     this.data,
     this.reference,
     this.dataMessage,
+    this.gatewayResponse,
     this.nextAction,
     this.displayText,
     this.authUrl,
@@ -29,6 +31,7 @@ class APIResponse {
     apiResponse.reference = apiResponse.data["reference"];
     apiResponse.dataMessage = apiResponse.data["message"] ?? "";
     apiResponse.displayText = apiResponse.data["display_text"] ?? "";
+    apiResponse.gatewayResponse = apiResponse.data["gateway_response"] ?? "";
     apiResponse.authUrl = apiResponse.data["url"] ?? "";
 
     TransactionState mNextAction = TransactionState.PENDING;
@@ -63,6 +66,9 @@ class APIResponse {
         break;
       case "open_url":
         mNextAction = TransactionState.SEND_AUTH_URL;
+        break;
+      case "ongoing":
+        mNextAction = TransactionState.FAILED;
         break;
       default:
         mNextAction = TransactionState.PENDING;

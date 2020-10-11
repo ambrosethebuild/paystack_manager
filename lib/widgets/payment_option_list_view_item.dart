@@ -18,10 +18,9 @@ class PaymentOptionListViewItem extends StatelessWidget {
       onPressed: onPressed,
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          SizedBox(
-            height: 15,
-          ),
           Row(
             children: <Widget>[
               Icon(
@@ -32,17 +31,17 @@ class PaymentOptionListViewItem extends StatelessWidget {
               SizedBox(
                 width: 10,
               ),
-              Text(
-                "Pay with ${paymentOption.name}",
-                style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                  color: UIColors.primaryColor,
+              Expanded(
+                child: Text(
+                  "Pay with ${paymentOption.name}",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    color: UIColors.primaryColor,
+                  ),
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
             ],
-          ),
-          SizedBox(
-            height: 10,
           ),
         ],
       ),

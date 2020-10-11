@@ -27,7 +27,7 @@ class _CardExpiryTextFieldState extends State<CardExpiryTextField> {
       keyboardType: TextInputType.number,
       validator: CardUtils.validateDate,
       inputFormatters: [
-        WhitelistingTextInputFormatter.digitsOnly,
+        FilteringTextInputFormatter.digitsOnly,
         new LengthLimitingTextInputFormatter(4),
         new CardMonthInputFormatter()
       ],

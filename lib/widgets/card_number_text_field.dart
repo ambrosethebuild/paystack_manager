@@ -30,7 +30,7 @@ class _CardNumberTextFieldState extends State<CardNumberTextField> {
       validator: CardUtils.validateCardNum,
       keyboardType: TextInputType.number,
       inputFormatters: [
-        WhitelistingTextInputFormatter.digitsOnly,
+        FilteringTextInputFormatter.digitsOnly,
         new LengthLimitingTextInputFormatter(19),
         new CardNumberInputFormatter()
       ],

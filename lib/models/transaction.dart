@@ -14,7 +14,8 @@ class Transaction {
 
   factory Transaction.fromObject(APIResponse apiResponse) {
     final transaction = Transaction();
-    transaction.message = apiResponse.dataMessage ?? "";
+    transaction.message =
+        apiResponse.gatewayResponse ?? apiResponse.dataMessage ?? "";
     transaction.refrenceNumber = apiResponse.reference;
     transaction.state = apiResponse.nextAction;
     return transaction;

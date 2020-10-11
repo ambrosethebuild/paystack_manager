@@ -26,6 +26,7 @@ class PaystackPayManager {
 
   //Response handler
   Function _onSuccessful;
+  Function _onPending;
   Function _onFailed;
   Function _onCancelled;
 
@@ -151,6 +152,8 @@ class PaystackPayManager {
 
     if (transactionResult.state == TransactionState.SUCCESS) {
       _onSuccessful(transactionResult);
+    } else if (transactionResult.state == TransactionState.PENDING) {
+      _onPending(transactionResult);
     } else if (transactionResult.state == TransactionState.FAILED) {
       _onFailed(transactionResult);
     } else {
@@ -160,6 +163,10 @@ class PaystackPayManager {
 
   onSuccesful(Function onSuccesful) {
     _onSuccessful = onSuccesful;
+  }
+
+  onPending(Function onPending) {
+    _onPending = onPending;
   }
 
   onFailed(Function onFailed) {
