@@ -13,3 +13,7 @@
 ## [1.0.3] - 2020-06-30
 
 * Now using status message directly from paystack api response
+
+## [1.0.4] - 2020-10-11
+
+* Updated packages and fix blank page durinng some transactions
